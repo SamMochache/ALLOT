@@ -14,7 +14,7 @@ function HomePage() {
           Secure infrastructure, manage risks, and stay compliant — all in one platform.
         </p>
         <a
-          href="/login"
+          href="/register"
           className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-600 hover:to-purple-600 px-5 py-2 rounded-full font-medium shadow-md transition-transform hover:scale-105"
         >
           Get Started

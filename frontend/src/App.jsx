@@ -4,6 +4,8 @@ import Dashboard from './pages/Dashboard';
 import HomePage from './pages/HomePage';
 import ProtectedRoute from './components/ProtectedRoute';
 import RegisterPage from './pages/RegisterPage';
+import AssessmentResultsPage from './pages/AssessmentResultsPage';
+
 
 function App() {
   return (
@@ -20,6 +22,14 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+  path="/assessment-results/:assessmentId"
+  element={
+    <ProtectedRoute>
+      <AssessmentResultsPage />
+    </ProtectedRoute>
+  }
+/>
       </Routes>
       
     </Router>
