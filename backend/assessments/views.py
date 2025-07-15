@@ -11,7 +11,7 @@ class AssessmentViewSet(viewsets.ModelViewSet):
     serializer_class = AssessmentSerializer
 
 class AssessmentResultViewSet(viewsets.ModelViewSet):
-    queryset = AssessmentResult.objects.all()
+    queryset = AssessmentResult.objects.all().order_by('completed_at')
     serializer_class = AssessmentResultSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['assessment']
